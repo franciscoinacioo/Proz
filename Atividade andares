@@ -1,0 +1,19 @@
+andar = 0
+while andar < 20:
+  andar = andar + 1
+  if andar == 13:
+    continue
+  print(andar)
+
+andar2 =0
+for andar2 in range(1, 21):
+  if andar2 == 13:
+    continue
+    print(andar2)
+
+andar3 = 20
+while andar3 > 0:
+  andar3 = andar3 - 1
+  if andar3 == 13:
+    continue
+  print(andar3)
