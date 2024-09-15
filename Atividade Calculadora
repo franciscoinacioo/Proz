@@ -1,0 +1,18 @@
+#Calculadora
+def calculadora(n1, n2, operacao):
+  if operacao == "+":
+    result = n1 + n2
+  elif operacao == "-":
+    result = n1 - n2
+  elif operacao == "*":
+    result = n1 * n2
+  elif operacao == "/":
+    result = n1 / n2
+  else:
+    print("0")
+  return result
+
+n1 = int(input("Digite o primeiro número:"))
+n2 = int(input("Digite o segundo número: "))
+operacao = input("Selecione a operação (+, -, *, /): ")
+print(calculadora(n1, n2, operacao)) 
