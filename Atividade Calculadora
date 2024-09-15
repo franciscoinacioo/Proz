@@ -9,7 +9,8 @@ def calculadora(n1, n2, operacao):
   elif operacao == "/":
     result = n1 / n2
   else:
-    result = print("0")
+    result = 0
+  return result
   
 
 n1 = int(input("Digite o primeiro número:"))
