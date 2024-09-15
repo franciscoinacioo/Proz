@@ -1,0 +1,34 @@
+def calculadora():
+    while True:
+        print("\nEscolha a operação:")
+        print("1: Soma")
+        print("2: Subtração")
+        print("3: Multiplicação")
+        print("4: Divisão")
+        print("0: Sair")
+        
+        operacao = input("Digite o número para a operação correspondente: ")
+        
+        if operacao == '0':
+            print("Saindo...")
+            break
+        
+        if operacao in ['1', '2', '3', '4']:
+            n1 = float(input("Digite o primeiro número: "))
+            n2 = float(input("Digite o segundo número: "))
+            
+            if operacao == '1':
+                print(f"Resultado: {n1} + {n2} = {n1 + n2}")
+            elif operacao == '2':
+                print(f"Resultado: {n1} - {n2} = {n1 - n2}")
+            elif operacao == '3':
+                print(f"Resultado: {n1} * {n2} = {n1 * n2}")
+            elif operacao == '4':
+                if n2 != 0:
+                    print(f"Resultado: {n1} / {n2} = {n1 / n2}")
+                else:
+                    print("Erro: Divisão por zero não é permitida.")
+        else:
+            print("Essa opção não existe. Por favor, escolha uma opção válida.")
+
+calculadora()
