@@ -1,0 +1,17 @@
+ano = True
+while ano:
+    try:
+        name = str(input("Digite seu nome completo: "))
+        nasc = int(input("Digite seu ano de nascimento: "))
+        if nasc < 1922 or nasc > 2024:
+            print("Ano inválido")
+        else:
+            x = 2024 - nasc
+            print(f"Seu nome é {name} e você tem ou fará neste ano {x} anos")
+            ano = False
+    except ValueError:
+        print("Ano inválido")
+    else:
+      x = 2024 - nasc
+      print("Seu nome é", name, "e você tem ou completará neste ano", x, "anos")
+      ano = False
